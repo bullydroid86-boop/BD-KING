@@ -1,0 +1,300 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+
+    background:#090909;
+    background-image:url("imagem/Fundo.png");
+    background-size:cover;
+    background-attachment:fixed;
+    background-position:center;
+
+    color:white;
+
+}
+
+/* MENU */
+
+nav{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:20px 60px;
+
+    background:rgba(0,0,0,.80);
+
+    backdrop-filter:blur(8px);
+
+}
+
+nav h2{
+
+    color:#d4af37;
+    font-size:35px;
+
+}
+
+nav ul{
+
+    display:flex;
+    gap:30px;
+
+    list-style:none;
+
+}
+
+nav li{
+
+    cursor:pointer;
+    transition:.3s;
+
+}
+
+nav li:hover{
+
+    color:#b300ff;
+
+}
+
+/* TOPO */
+
+header{
+
+    text-align:center;
+
+    padding-top:60px;
+    padding-bottom:80px;
+
+}
+
+.logo{
+
+    width:280px;
+
+    filter:
+
+    drop-shadow(0px 0px 20px #a100ff);
+
+    animation:flutuar 3s infinite;
+
+}
+
+@keyframes flutuar{
+
+0%{
+
+transform:translateY(0px);
+
+}
+
+50%{
+
+transform:translateY(-12px);
+
+}
+
+100%{
+
+transform:translateY(0px);
+
+}
+
+}
+
+header h1{
+
+    font-size:90px;
+
+    color:#d4af37;
+
+    text-shadow:
+
+    0px 0px 20px purple;
+
+}
+
+header p{
+
+    margin-top:10px;
+
+    font-size:25px;
+
+    color:#d7b6ff;
+
+}
+
+button{
+
+    margin-top:30px;
+
+    padding:18px 45px;
+
+    border:none;
+
+    border-radius:15px;
+
+    background:#7c00ff;
+
+    color:white;
+
+    font-size:20px;
+
+    cursor:pointer;
+
+    transition:.4s;
+
+}
+
+button:hover{
+
+    transform:scale(1.1);
+
+    box-shadow:0px 0px 30px purple;
+
+}
+
+/* STATUS */
+
+.status{
+
+display:flex;
+
+justify-content:center;
+
+gap:25px;
+
+flex-wrap:wrap;
+
+padding:30px;
+
+}
+
+.status div{
+
+background:rgba(0,0,0,.75);
+
+border:2px solid purple;
+
+border-radius:20px;
+
+padding:30px;
+
+width:190px;
+
+text-align:center;
+
+transition:.3s;
+
+}
+
+.status div:hover{
+
+transform:translateY(-8px);
+
+box-shadow:0px 0px 25px purple;
+
+}
+
+.status h2{
+
+font-size:45px;
+
+color:gold;
+
+}
+
+/* MEMBROS */
+
+.membros{
+
+padding:70px;
+
+text-align:center;
+
+}
+
+.membros h1{
+
+font-size:50px;
+
+margin-bottom:50px;
+
+color:gold;
+
+}
+
+.cards{
+
+display:flex;
+
+justify-content:center;
+
+gap:25px;
+
+flex-wrap:wrap;
+
+}
+
+.card{
+
+background:rgba(0,0,0,.75);
+
+border:2px solid purple;
+
+border-radius:20px;
+
+padding:30px;
+
+width:220px;
+
+transition:.4s;
+
+}
+
+.card:hover{
+
+transform:scale(1.08);
+
+box-shadow:0px 0px 30px purple;
+
+}
+
+.card h2{
+
+margin-bottom:10px;
+
+color:white;
+
+}
+
+/* RODAPÉ */
+
+footer{
+
+margin-top:80px;
+
+padding:40px;
+
+text-align:center;
+
+background:black;
+
+border-top:2px solid purple;
+
+}
+
+footer h2{
+
+color:gold;
+
+font-size:40px;
+
+margin-bottom:10px;
+
+}
